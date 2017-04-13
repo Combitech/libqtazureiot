@@ -26,6 +26,7 @@ Window {
     title: qsTr("Hello World Azure IoT Hub")
 
     AzureIotDevice {
-
+        id: iotDevice
+        onMethodCalled: console.log(method, payload)
     }
 }
